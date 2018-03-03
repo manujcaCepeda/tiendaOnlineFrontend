@@ -9,3 +9,11 @@ export class Usuario {
         public rol:any
     ) { }
 }
+
+
+export class LoginStatus {
+    constructor(
+        public codigo: string,
+        public mensaje: string
+    ) { }
+}

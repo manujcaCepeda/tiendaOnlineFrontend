@@ -1,3 +1,4 @@
+import { UsuarioService } from './services/usuario.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -34,7 +35,7 @@ import {HttpModule} from '@angular/http';
     FormsModule,
     HttpModule
   ],
-  providers: [ArticuloService],
+  providers: [ArticuloService, UsuarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

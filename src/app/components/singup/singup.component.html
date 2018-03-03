@@ -1,5 +1,7 @@
 <div class="container">
   
+  <div class="{{alertStyle}}" role="alert" *ngIf="loginStatus.codigo != ''">{{loginStatus.mensaje}}</div>
+
   <div class="ml-1 mr-1 mt3" >
     <h2>Registro - Tienda Online</h2>
     <hr/>
