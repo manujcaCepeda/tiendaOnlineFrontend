@@ -13,6 +13,8 @@ import { StockComponent } from './components/stock/stock.component';
 import { ComprasRealizadasComponent } from './components/compras-realizadas/compras-realizadas.component';
 import { routes } from './app.routes';
 import {FormsModule} from '@angular/forms';
+import { ArticuloService } from './services/articulo.service';
+import {HttpModule} from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -29,9 +31,10 @@ import {FormsModule} from '@angular/forms';
   imports: [
     BrowserModule,
     routes,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [ArticuloService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
