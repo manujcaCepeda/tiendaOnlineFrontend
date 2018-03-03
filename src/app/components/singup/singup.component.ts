@@ -1,3 +1,4 @@
+import { Usuario } from './../../models/usuario';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingupComponent implements OnInit {
 
-  constructor() { }
+  usuario: Usuario;
+  constructor() {
+    this.usuario = new Usuario('', '', '', '', '', '', 0);
+  }
 
   ngOnInit() {
   }
